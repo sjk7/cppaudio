@@ -1,0 +1,38 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+*.ipch
+*.db
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+*.pdb
+*.ilk
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+./build-tdd-myaudio-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/debug/tdd-myaudio.exe
+./build-tdd-myaudio-Desktop_Qt_5_15_2_MSVC2019_64bit-Release/debug/tdd-myaudio.exe

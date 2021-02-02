@@ -1,0 +1,779 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'dllpath' could be '0':  this does not adhere to the specification for the function 'OpenFile'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 9,
+                  "endLine": 71,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?findDrvPath@@YAJPEAD0H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 18,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 18,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 19,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 9,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 20,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 10,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 11,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 12,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 13,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 56,
+                            "startColumn": 61
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 14,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 58,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 15,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 16,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 60,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 17,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 61,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 18,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 62,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 19,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 63,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 20,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 64,
+                            "startColumn": 64
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 21,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 65,
+                            "startColumn": 71
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 22,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 66,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 23,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 66,
+                            "startColumn": 36
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 24,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 67,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'dllpath' may be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 25,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 68,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'cr==0')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 26,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 69,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 27,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 70,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 28,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 71,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "'dllpath' is an Input to 'OpenFile' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\um\\winbase.h:2842)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 29,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                          },
+                          "region": {
+                            "startLine": 71,
+                            "startColumn": 15
+                          }
+                        },
+                        "message": {
+                          "text": "'dllpath' should not be NULL, because this is not consistent with the SAL annotation on 'OpenFile'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "Return value ignored: 'CoInitialize'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                },
+                "region": {
+                  "startLine": 197,
+                  "startColumn": 14,
+                  "endLine": 197,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0AsioDriverList@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+                },
+                "region": {
+                  "startLine": 267,
+                  "startColumn": 34,
+                  "endLine": 267,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?asioGetDriverName@AsioDriverList@@QEAAJHPEADH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29335.0"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00EAB1D0 -il C:\\Users\\DevNVME\\AppData\\Local\\Temp\\_CL_88d34555ast -typedil -f ..\\..\\src\\hostapi\\asio\\ASIOSDK\\host\\pc\\asiolist.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829335 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN32 -GR -D_CPPRTTI -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\src\\hostapi\\asio\\ASIOSDK\\host -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\src\\hostapi\\asio\\ASIOSDK\\host\\pc -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\src\\hostapi\\asio\\ASIOSDK\\common -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\src\\common -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\include -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\build\\msvc\\ -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\src\\os\\win -nologo -W 3 -diagnostics:column -Og -Oy -Oi -Ot -DCODE_ANALYSIS -D_WIN64 -DNDEBUG -D_USRDLL -DPA_ENABLE_DEBUG_OUTPUT -D_CRT_SECURE_NO_DEPRECATE -DPAWIN_USE_WDMKS_DEVICE_INFO -DPA_USE_ASIO=1 -DPA_USE_DS=1 -DPA_USE_WMME=1 -DPA_USE_WASAPI=1 -DPA_USE_WDMKS=1 -D_VC80_UPGRADE=0x0600 -D_WINDLL -GF -EHs -D_CPPUNWIND -EHc -MD -D_MT -D_DLL -GS -D_M_FP_PRECISE -Zc:wchar_t -Zc:forScope -Fox64\\Release\\asiolist.obj -Fdx64\\Release\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\build\\msvc -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/pa_asio.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/portaudio.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/pa_asio.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_util.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_allocation.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_hostapi.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_stream.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_cpuload.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_process.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_converters.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_dither.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_types.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_debugprint.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_ringbuffer.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_coinitialize.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/asiosys.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/asio.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/asiodrivers.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/ginclude.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/asiolist.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/hostapi/asio/iasiothiscallresolver.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/asio/ASIOSDK/host/pc/asiolist.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/iasiodrv.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        }
+      ]
+    }
+  ]
+}

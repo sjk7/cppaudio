@@ -1,0 +1,2043 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 779,
+                  "startColumn": 33,
+                  "endLine": 779,
+                  "endColumn": 67
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 779,
+                  "startColumn": 33,
+                  "endLine": 779,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 805,
+                  "startColumn": 37,
+                  "endLine": 805,
+                  "endColumn": 84
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 805,
+                  "startColumn": 37,
+                  "endLine": 805,
+                  "endColumn": 71
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 821,
+                  "startColumn": 37,
+                  "endLine": 821,
+                  "endColumn": 84
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 821,
+                  "startColumn": 37,
+                  "endLine": 821,
+                  "endColumn": 71
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 865,
+                  "startColumn": 33,
+                  "endLine": 865,
+                  "endColumn": 68
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 865,
+                  "startColumn": 33,
+                  "endLine": 865,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 896,
+                  "startColumn": 37,
+                  "endLine": 896,
+                  "endColumn": 85
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 896,
+                  "startColumn": 37,
+                  "endLine": 896,
+                  "endColumn": 72
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 926,
+                  "startColumn": 41,
+                  "endLine": 926,
+                  "endColumn": 89
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 926,
+                  "startColumn": 41,
+                  "endLine": 926,
+                  "endColumn": 76
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 956,
+                  "startColumn": 25,
+                  "endLine": 956,
+                  "endColumn": 73
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 956,
+                  "startColumn": 25,
+                  "endLine": 956,
+                  "endColumn": 60
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NonAdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 999,
+                  "startColumn": 73
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingInputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 999,
+                  "startColumn": 21,
+                  "endLine": 999,
+                  "endColumn": 55
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingInputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1010,
+                  "startColumn": 21,
+                  "endLine": 1010,
+                  "endColumn": 55
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingInputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1019,
+                  "startColumn": 21,
+                  "endLine": 1019,
+                  "endColumn": 59
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingInputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1019,
+                  "startColumn": 21,
+                  "endLine": 1019,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingInputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1036,
+                  "startColumn": 21,
+                  "endLine": 1036,
+                  "endColumn": 68
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingInputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1036,
+                  "startColumn": 21,
+                  "endLine": 1036,
+                  "endColumn": 55
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingInputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1109,
+                  "startColumn": 29,
+                  "endLine": 1109,
+                  "endColumn": 63
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingOutputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1109,
+                  "startColumn": 29,
+                  "endLine": 1109,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingOutputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1142,
+                  "startColumn": 79
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingOutputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1142,
+                  "startColumn": 25,
+                  "endLine": 1142,
+                  "endColumn": 60
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingOutputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1151,
+                  "startColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingOutputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1169,
+                  "startColumn": 25,
+                  "endLine": 1169,
+                  "endColumn": 73
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingOutputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1169,
+                  "startColumn": 25,
+                  "endLine": 1169,
+                  "endColumn": 60
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingOutputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1191,
+                  "startColumn": 25,
+                  "endLine": 1191,
+                  "endColumn": 73
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingOutputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1191,
+                  "startColumn": 25,
+                  "endLine": 1191,
+                  "endColumn": 60
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingOutputOnlyProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1239,
+                  "startColumn": 75
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "CopyTempOutputBuffersToHostOutputBuffers",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1239,
+                  "startColumn": 21,
+                  "endLine": 1239,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "CopyTempOutputBuffersToHostOutputBuffers",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1248,
+                  "startColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "CopyTempOutputBuffersToHostOutputBuffers",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1267,
+                  "startColumn": 21,
+                  "endLine": 1267,
+                  "endColumn": 69
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "CopyTempOutputBuffersToHostOutputBuffers",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1267,
+                  "startColumn": 21,
+                  "endLine": 1267,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "CopyTempOutputBuffersToHostOutputBuffers",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1338,
+                  "startColumn": 33,
+                  "endLine": 1338,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1338,
+                  "startColumn": 33,
+                  "endLine": 1338,
+                  "endColumn": 68
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1368,
+                  "startColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1368,
+                  "startColumn": 25,
+                  "endLine": 1368,
+                  "endColumn": 59
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1377,
+                  "startColumn": 25,
+                  "endLine": 1377,
+                  "endColumn": 59
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1394,
+                  "startColumn": 25,
+                  "endLine": 1394,
+                  "endColumn": 72
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1394,
+                  "startColumn": 25,
+                  "endLine": 1394,
+                  "endColumn": 59
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1427,
+                  "startColumn": 33,
+                  "endLine": 1427,
+                  "endColumn": 67
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1427,
+                  "startColumn": 33,
+                  "endLine": 1427,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1443,
+                  "startColumn": 33,
+                  "endLine": 1443,
+                  "endColumn": 67
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1443,
+                  "startColumn": 33,
+                  "endLine": 1443,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AdaptingProcess",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1694,
+                  "startColumn": 21,
+                  "endLine": 1694,
+                  "endColumn": 70
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyInput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1694,
+                  "startColumn": 21,
+                  "endLine": 1694,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyInput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1699,
+                  "startColumn": 17,
+                  "endLine": 1699,
+                  "endColumn": 60
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyInput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1699,
+                  "startColumn": 17,
+                  "endLine": 1699,
+                  "endColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyInput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1719,
+                  "startColumn": 28,
+                  "endLine": 1719,
+                  "endColumn": 58
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyInput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1724,
+                  "startColumn": 21,
+                  "endLine": 1724,
+                  "endColumn": 70
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyInput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1724,
+                  "startColumn": 21,
+                  "endLine": 1724,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyInput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1765,
+                  "startColumn": 21,
+                  "endLine": 1765,
+                  "endColumn": 71
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyOutput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1765,
+                  "startColumn": 21,
+                  "endLine": 1765,
+                  "endColumn": 58
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyOutput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1770,
+                  "startColumn": 17,
+                  "endLine": 1770,
+                  "endColumn": 61
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyOutput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1770,
+                  "startColumn": 17,
+                  "endLine": 1770,
+                  "endColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyOutput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1792,
+                  "startColumn": 27,
+                  "endLine": 1792,
+                  "endColumn": 58
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyOutput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1797,
+                  "startColumn": 21,
+                  "endLine": 1797,
+                  "endColumn": 71
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyOutput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1797,
+                  "startColumn": 21,
+                  "endLine": 1797,
+                  "endColumn": 58
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_CopyOutput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1825,
+                  "startColumn": 17,
+                  "endLine": 1825,
+                  "endColumn": 67
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_ZeroOutput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+                },
+                "region": {
+                  "startLine": 1825,
+                  "startColumn": 17,
+                  "endLine": 1825,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "PaUtil_ZeroOutput",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29335.0"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x64\\c1.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00EAB1D0 -il C:\\Users\\DevNVME\\AppData\\Local\\Temp\\_CL_7b044713ast -typedil -f ..\\..\\src\\common\\pa_process.c -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829335 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN32 -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\src\\common -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\include -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\build\\msvc\\ -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\src\\os\\win -nologo -W 3 -diagnostics:column -Og -Oy -Oi -Ot -DCODE_ANALYSIS -D_WIN64 -DNDEBUG -D_USRDLL -DPA_ENABLE_DEBUG_OUTPUT -D_CRT_SECURE_NO_DEPRECATE -DPAWIN_USE_WDMKS_DEVICE_INFO -DPA_USE_ASIO=1 -DPA_USE_DS=1 -DPA_USE_WMME=1 -DPA_USE_WASAPI=1 -DPA_USE_WDMKS=1 -D_VC80_UPGRADE=0x0600 -D_WINDLL -GF -D_MT -D_DLL -GS -D_M_FP_PRECISE -Fox64\\Release\\pa_process.obj -Fdx64\\Release\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\build\\msvc -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_waveformat.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/portaudio.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/pa_win_waveformat.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_util.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_util.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_hostapis.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_hostapi.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_coinitialize.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_debugprint.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_coinitialize.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wmme/pa_win_wmme.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_trace.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_allocation.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_stream.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_cpuload.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_process.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_converters.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_dither.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_types.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/pa_win_wmme.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_wdmks_utils.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wdmks/pa_win_wdmks.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_memorybarrier.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_ringbuffer.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/pa_win_wdmks.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/pa_win_wasapi.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/hostapi/skeleton/pa_hostapi_skeleton.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/hostapi/dsound/pa_win_ds_dynlink.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/hostapi/dsound/pa_win_ds_dynlink.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/dsound/pa_win_ds.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/pa_win_ds.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_trace.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_stream.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_ringbuffer.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/common/pa_process.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        }
+      ]
+    }
+  ]
+}

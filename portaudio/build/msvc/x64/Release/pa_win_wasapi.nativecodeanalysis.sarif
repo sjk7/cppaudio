@@ -1,0 +1,2297 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'Temp_value_#812' could be '0':  this does not adhere to the specification for the function 'GetProcAddress'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 1142,
+                  "startColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "IsWow64",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1133,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1134,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1136,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1142,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "'<symbol>' receives the Return value from 'GetModuleHandleA' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\um\\libloaderapi.h:260)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1142,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "'Temp_value_#812' should not be NULL, because this is not consistent with the SAL annotation on 'GetProcAddress'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'Temp_value_#828' could be '0':  this does not adhere to the specification for the function 'GetProcAddress'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 1184,
+                  "startColumn": 5,
+                  "endLine": 1184,
+                  "endColumn": 100
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "IsWindowsVersionOrGreater",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1176,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1177,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1179,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1180,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1181,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1182,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1184,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'<symbol>' receives the Return value from 'GetModuleHandleA' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\um\\libloaderapi.h:260)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1184,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'Temp_value_#828' should not be NULL, because this is not consistent with the SAL annotation on 'GetProcAddress'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'Temp_value_#831' could be '0':  this does not adhere to the specification for the function 'GetProcAddress'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 1185,
+                  "startColumn": 5,
+                  "endLine": 1185,
+                  "endColumn": 96
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "IsWindowsVersionOrGreater",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1176,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1177,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1179,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1180,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1181,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1182,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1184,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1185,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "'<symbol>' receives the Return value from 'GetModuleHandleA' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\um\\libloaderapi.h:260)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1185,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "'Temp_value_#831' should not be NULL, because this is not consistent with the SAL annotation on 'GetProcAddress'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'Temp_value_#886' could be '0':  this does not adhere to the specification for the function 'GetProcAddress'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 1223,
+                  "startColumn": 14,
+                  "endLine": 1223,
+                  "endColumn": 115
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "GetWindowsVersion",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1208,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1210,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'version==WINDOWS_UNKNOWN')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1212,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1212,
+                            "startColumn": 45
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1212,
+                            "startColumn": 65
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1216,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1217,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1223,
+                            "startColumn": 112
+                          }
+                        },
+                        "message": {
+                          "text": "'<symbol>' receives the Return value from 'GetModuleHandleA' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\um\\libloaderapi.h:260)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1223,
+                            "startColumn": 112
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 9,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1223,
+                            "startColumn": 112
+                          }
+                        },
+                        "message": {
+                          "text": "'Temp_value_#886' should not be NULL, because this is not consistent with the SAL annotation on 'GetProcAddress'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'Temp_value_#891' could be '0':  this does not adhere to the specification for the function 'GetProcAddress'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 1245,
+                  "startColumn": 18,
+                  "endLine": 1245,
+                  "endColumn": 113
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "GetWindowsVersion",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1208,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1210,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'version==WINDOWS_UNKNOWN')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1212,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1212,
+                            "startColumn": 45
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1212,
+                            "startColumn": 65
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1216,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1217,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1223,
+                            "startColumn": 112
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1240,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'dwMajorVersion==4294967295')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 9,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1242,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 10,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1243,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 11,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1245,
+                            "startColumn": 110
+                          }
+                        },
+                        "message": {
+                          "text": "'<symbol>' receives the Return value from 'GetModuleHandleA' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\um\\libloaderapi.h:260)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 12,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1245,
+                            "startColumn": 110
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 13,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 1245,
+                            "startColumn": 110
+                          }
+                        },
+                        "message": {
+                          "text": "'Temp_value_#891' should not be NULL, because this is not consistent with the SAL annotation on 'GetProcAddress'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 1445,
+                  "startColumn": 42,
+                  "endLine": 1445,
+                  "endColumn": 55
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "_MixMonoToStereo_1TO2_24",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 1468,
+                  "startColumn": 42,
+                  "endLine": 1468,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "_MixMonoToStereo_2TO1_24",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 1502,
+                  "startColumn": 42,
+                  "endLine": 1502,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "_MixMonoToStereo_2TO1_24_L",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6216",
+          "message": {
+            "text": "Compiler-inserted cast between semantically different integral types:  a Boolean type to HRESULT."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 2830,
+                  "startColumn": 18,
+                  "endLine": 2830,
+                  "endColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "GetAlternativeSampleFormatExclusive",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6217",
+          "message": {
+            "text": "Implicit cast between semantically different integer types:  testing HRESULT with 'not'.  Consider using SUCCEEDED or FAILED macro instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 2830,
+                  "startColumn": 18,
+                  "endLine": 2830,
+                  "endColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "GetAlternativeSampleFormatExclusive",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6216",
+          "message": {
+            "text": "Compiler-inserted cast between semantically different integral types:  a Boolean type to HRESULT."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 2893,
+                  "startColumn": 40,
+                  "endLine": 2893,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "GetClosestFormat",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6217",
+          "message": {
+            "text": "Implicit cast between semantically different integer types:  testing HRESULT with 'not'.  Consider using SUCCEEDED or FAILED macro instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 2893,
+                  "startColumn": 40,
+                  "endLine": 2893,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "GetClosestFormat",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6255",
+          "message": {
+            "text": "_alloca indicates failure by raising a stack overflow exception.  Consider using _malloca instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 4633,
+                  "startColumn": 31,
+                  "endLine": 4633,
+                  "endColumn": 79
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "ReadStream",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6255",
+          "message": {
+            "text": "_alloca indicates failure by raising a stack overflow exception.  Consider using _malloca instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 4812,
+                  "startColumn": 37,
+                  "endLine": 4812,
+                  "endColumn": 91
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "WriteStream",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'stream->out.monoMixer'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                },
+                "region": {
+                  "startLine": 6450,
+                  "startColumn": 29,
+                  "endLine": 6450,
+                  "endColumn": 88
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "ProcThreadPoll",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6137,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6138,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6139,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6140,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6141,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6142,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6143,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6144,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6145,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 9,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6146,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 10,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6147,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 11,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6153,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 12,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6156,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 13,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6160,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 14,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6163,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 15,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6166,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 16,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6167,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 17,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6168,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 18,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6169,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 19,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6172,
+                            "startColumn": 33
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 20,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6175,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 21,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6178,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 22,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6181,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 23,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6183,
+                            "startColumn": 62
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 24,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6191,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 25,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6195,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 26,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6240,
+                            "startColumn": 63
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 27,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6248,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 28,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6254,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 29,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6350,
+                            "startColumn": 74
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 30,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6352,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 31,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6352,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 32,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6352,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 33,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6353,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 34,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6353,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 35,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6353,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 36,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6354,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 37,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6356,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 38,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6363,
+                            "startColumn": 73
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 39,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6369,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 40,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6372,
+                            "startColumn": 123
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 41,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6382,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 42,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6385,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 43,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6388,
+                            "startColumn": 105
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 44,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6391,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 45,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6392,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 46,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6395,
+                            "startColumn": 40
+                          }
+                        },
+                        "message": {
+                          "text": "'stream->out.monoMixer' may be NULL (Skip this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 47,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6419,
+                            "startColumn": 39
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'stream->in.monoMixer' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 48,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6446,
+                            "startColumn": 58
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 49,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6449,
+                            "startColumn": 40
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'stream->out.monoBuffer')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 50,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+                          },
+                          "region": {
+                            "startLine": 6450,
+                            "startColumn": 50
+                          }
+                        },
+                        "message": {
+                          "text": "'stream->out.monoMixer' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29335.0"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x64\\c1.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00EAB1D0 -il C:\\Users\\DevNVME\\AppData\\Local\\Temp\\_CL_79fc61a4ast -typedil -f ..\\..\\src\\hostapi\\wasapi\\pa_win_wasapi.c -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829335 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN32 -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\src\\common -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\include -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\build\\msvc\\ -I C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\src\\os\\win -nologo -W 3 -diagnostics:column -Og -Oy -Oi -Ot -DCODE_ANALYSIS -D_WIN64 -DNDEBUG -D_USRDLL -DPA_ENABLE_DEBUG_OUTPUT -D_CRT_SECURE_NO_DEPRECATE -DPAWIN_USE_WDMKS_DEVICE_INFO -DPA_USE_ASIO=1 -DPA_USE_DS=1 -DPA_USE_WMME=1 -DPA_USE_WASAPI=1 -DPA_USE_WDMKS=1 -D_VC80_UPGRADE=0x0600 -D_WINDLL -GF -D_MT -D_DLL -GS -D_M_FP_PRECISE -Fox64\\Release\\pa_win_wasapi.obj -Fdx64\\Release\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\DevNVME\\Desktop\\cppaudio\\portaudio\\build\\msvc -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_waveformat.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/portaudio.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/pa_win_waveformat.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_util.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_util.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_hostapis.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_hostapi.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_coinitialize.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_debugprint.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_coinitialize.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wmme/pa_win_wmme.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_trace.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_allocation.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_stream.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_cpuload.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_process.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_converters.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_dither.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_types.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/pa_win_wmme.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/os/win/pa_win_wdmks_utils.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wdmks/pa_win_wdmks.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_memorybarrier.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/src/common/pa_ringbuffer.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/pa_win_wdmks.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/DevNVME/Desktop/cppaudio/portaudio/src/hostapi/wasapi/pa_win_wasapi.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/devnvme/desktop/cppaudio/portaudio/include/pa_win_wasapi.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        }
+      ]
+    }
+  ]
+}
