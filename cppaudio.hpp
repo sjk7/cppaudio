@@ -68,14 +68,113 @@ class SystemDevice
     const std::string_view name() const noexcept { return info.name; }
     const PaDeviceInfo &Info() const noexcept { return info; }
     int GlobalDeviceIndex() const noexcept { return m_global_device_index; };
+    bool CanInput() const noexcept { return info.maxInputChannels > 0;    }
+    bool CanOutput() const noexcept { return info.maxOutputChannels > 0; }
+    bool CanDuplex() const noexcept { return CanInput() && CanOutput(); }
+
 };
+enum class Direction
+{
+    unknown = 0, input = 1, output = 2, duplex = (input | output)
+};
+
 using SystemDeviceList = std::vector<SystemDevice>;
 class Device
 {
     SystemDevice m_sysDevice;
+    PaDeviceInfo m_info = {};
+    PaStreamParameters m_inParams = {-1,-1 ,paFloat32, 0, nullptr};
+    PaStreamParameters m_outParams = {-1,-1, paFloat32, 0, nullptr};
+    // the *desired* direction you want tht device to operate in.
+    Direction m_direction = Direction::unknown;
 
+    void setCurrentDirection(Direction dir) {
+        
+        if (dir== Direction::output)
+        {
+            if (!m_sysDevice.CanOutput())
+            {
+                throw std::runtime_error("Not an output device");
+            }
+        }
+        else if (dir == Direction::input)
+        {
+            if (!m_sysDevice.CanInput())
+            {
+                throw std::runtime_error("Not an input device");
+            }
+        }
+        else
+        {
+            if (!m_sysDevice.CanDuplex())
+            {
+                throw std::runtime_error("Not a duplex device");
+            }
+        }
+        m_direction = dir;
+        if (this->IsOutput())
+        {
+            setDefaultOutParams();
+        }
+        if (this->IsInput())
+        {
+            setDefaultInParams();
+        }
+    }
   public:
-    Device(const SystemDevice &sysdevice) : m_sysDevice(sysdevice) {}
+    Device(const SystemDevice &sysdevice, const Direction dir = Direction::unknown) : 
+        m_sysDevice(sysdevice) , m_direction(dir)
+    
+    {
+        m_info = m_sysDevice.Info();
+        if (dir == Direction::unknown)
+        {
+            if (m_sysDevice.CanOutput())
+            {
+                setCurrentDirection(Direction::output);
+            }
+            else if (m_sysDevice.CanInput())
+            {
+                setCurrentDirection(Direction::input);
+            }
+            else
+            {
+                if (m_sysDevice.CanDuplex())
+                {
+                    setCurrentDirection(Direction::duplex);
+                }
+            }
+        }
+
+    }
+
+    const PaDeviceInfo &Info() const noexcept { return m_info; }
+    std::string_view name() const noexcept { return m_info.name; }
+    bool IsOutput() const noexcept {
+        return (m_direction == Direction::output) ||
+               (m_direction == Direction::duplex);
+    }
+    bool IsInput() const noexcept {
+        return (m_direction == Direction::duplex) || (m_direction ==
+                   Direction::input);
+    }
+    bool IsDuplex() const noexcept { 
+        return m_direction == Direction::duplex;
+    }
+
+    void setDefaultOutParams() {
+
+    }
+    void setDefaultInParams() {
+
+    }
+
+    bool hasOutputParams() const noexcept {
+        return m_outParams.device >= 0;
+    }
+    bool hasInputParams() const noexcept { return m_inParams.device >= 0;
+    }
+    
 };
 
 class HostApi;

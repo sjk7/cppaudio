@@ -19,7 +19,12 @@ void test_sine() {
     
     auto& sysDevice = hostapi.DefaultOutputDevice();
     assert(sysDevice.has_value());
-
+    auto mydevice = cppaudio::Device(sysDevice.value(), cppaudio::Direction::output);
+    cout << mydevice.name() << endl;
+    assert(mydevice.name() == sysDevice.value().name());
+    assert(mydevice.IsOutput());
+    assert(mydevice.hasOutputParams());
+    assert(!mydevice.hasInputParams());
 
 }
 
