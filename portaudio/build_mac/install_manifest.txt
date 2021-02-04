@@ -1,0 +1,11 @@
+/usr/local/share/doc/portaudio/README.md
+/usr/local/share/doc/portaudio/LICENSE.txt
+/usr/local/lib/pkgconfig/portaudio-2.0.pc
+/usr/local/include/portaudio.h
+/usr/local/include/pa_mac_core.h
+/usr/local/lib/libportaudio.dylib
+/usr/local/lib/libportaudio.a
+/usr/local/lib/cmake/portaudio/portaudioTargets.cmake
+/usr/local/lib/cmake/portaudio/portaudioTargets-debug.cmake
+/usr/local/lib/cmake/portaudio/portaudioConfig.cmake
+/usr/local/lib/cmake/portaudio/portaudioConfigVersion.cmake

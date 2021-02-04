@@ -1,0 +1,9 @@
+/Users/stevekerr/Documents/cppaudio/portaudio/build_mac/CMakeFiles/list_install_components.dir
+/Users/stevekerr/Documents/cppaudio/portaudio/build_mac/CMakeFiles/install/strip.dir
+/Users/stevekerr/Documents/cppaudio/portaudio/build_mac/CMakeFiles/install.dir
+/Users/stevekerr/Documents/cppaudio/portaudio/build_mac/CMakeFiles/uninstall.dir
+/Users/stevekerr/Documents/cppaudio/portaudio/build_mac/CMakeFiles/portaudio_static.dir
+/Users/stevekerr/Documents/cppaudio/portaudio/build_mac/CMakeFiles/rebuild_cache.dir
+/Users/stevekerr/Documents/cppaudio/portaudio/build_mac/CMakeFiles/edit_cache.dir
+/Users/stevekerr/Documents/cppaudio/portaudio/build_mac/CMakeFiles/install/local.dir
+/Users/stevekerr/Documents/cppaudio/portaudio/build_mac/CMakeFiles/portaudio.dir

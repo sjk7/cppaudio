@@ -19,7 +19,9 @@ struct ComInit
     }
 };
 #else
-#define ComInit
+struct ComInit
+{
+};
 #endif
 
 namespace cppaudio
@@ -62,20 +64,24 @@ class SystemDevice
     int m_global_device_index = 0;
 
   public:
-    SystemDevice(const PaDeviceInfo *info, int global_device_index) 
-        : info(*info), m_global_device_index(global_device_index) {}
+    SystemDevice(const PaDeviceInfo *info, int global_device_index)
+        : info(*info), m_global_device_index(global_device_index)
+    {
+    }
 
     const std::string_view name() const noexcept { return info.name; }
     const PaDeviceInfo &Info() const noexcept { return info; }
     int GlobalDeviceIndex() const noexcept { return m_global_device_index; };
-    bool CanInput() const noexcept { return info.maxInputChannels > 0;    }
+    bool CanInput() const noexcept { return info.maxInputChannels > 0; }
     bool CanOutput() const noexcept { return info.maxOutputChannels > 0; }
     bool CanDuplex() const noexcept { return CanInput() && CanOutput(); }
-
 };
 enum class Direction
 {
-    unknown = 0, input = 1, output = 2, duplex = (input | output)
+    unknown = 0,
+    input = 1,
+    output = 2,
+    duplex = (input | output)
 };
 
 using SystemDeviceList = std::vector<SystemDevice>;
@@ -83,14 +89,15 @@ class Device
 {
     SystemDevice m_sysDevice;
     PaDeviceInfo m_info = {};
-    PaStreamParameters m_inParams = {-1,-1 ,paFloat32, 0, nullptr};
-    PaStreamParameters m_outParams = {-1,-1, paFloat32, 0, nullptr};
+    PaStreamParameters m_inParams = {-1, -1, paFloat32, 0, nullptr};
+    PaStreamParameters m_outParams = {-1, -1, paFloat32, 0, nullptr};
     // the *desired* direction you want tht device to operate in.
     Direction m_direction = Direction::unknown;
 
-    void setCurrentDirection(Direction dir) {
-        
-        if (dir== Direction::output)
+    void setCurrentDirection(Direction dir)
+    {
+
+        if (dir == Direction::output)
         {
             if (!m_sysDevice.CanOutput())
             {
@@ -121,10 +128,12 @@ class Device
             setDefaultInParams();
         }
     }
+
   public:
-    Device(const SystemDevice &sysdevice, const Direction dir = Direction::unknown) : 
-        m_sysDevice(sysdevice) , m_direction(dir)
-    
+    Device(const SystemDevice &sysdevice,
+           const Direction dir = Direction::unknown)
+        : m_sysDevice(sysdevice), m_direction(dir)
+
     {
         m_info = m_sysDevice.Info();
         if (dir == Direction::unknown)
@@ -145,36 +154,27 @@ class Device
                 }
             }
         }
-
     }
 
     const PaDeviceInfo &Info() const noexcept { return m_info; }
     std::string_view name() const noexcept { return m_info.name; }
-    bool IsOutput() const noexcept {
+    bool IsOutput() const noexcept
+    {
         return (m_direction == Direction::output) ||
                (m_direction == Direction::duplex);
     }
-    bool IsInput() const noexcept {
-        return (m_direction == Direction::duplex) || (m_direction ==
-                   Direction::input);
+    bool IsInput() const noexcept
+    {
+        return (m_direction == Direction::duplex) ||
+               (m_direction == Direction::input);
     }
-    bool IsDuplex() const noexcept { 
-        return m_direction == Direction::duplex;
-    }
+    bool IsDuplex() const noexcept { return m_direction == Direction::duplex; }
 
-    void setDefaultOutParams() {
+    void setDefaultOutParams() {}
+    void setDefaultInParams() {}
 
-    }
-    void setDefaultInParams() {
-
-    }
-
-    bool hasOutputParams() const noexcept {
-        return m_outParams.device >= 0;
-    }
-    bool hasInputParams() const noexcept { return m_inParams.device >= 0;
-    }
-    
+    bool hasOutputParams() const noexcept { return m_outParams.device >= 0; }
+    bool hasInputParams() const noexcept { return m_inParams.device >= 0; }
 };
 
 class HostApi;
@@ -243,7 +243,7 @@ static const std::vector<std::string> HostIdNames = {
 [[maybe_unused]] static inline const std::string_view
 HostIdToString(const HostIds hostId)
 {
-    int i = (int)hostId;
+    unsigned int i = (unsigned int)hostId;
     if (i >= HostIdNames.size())
     {
         return "ERROR: BAD HOST ID";
@@ -285,7 +285,8 @@ class HostApi
     const auto &Devices() const noexcept { return m_enum.Devices(); }
     HostIds HostId() const noexcept { return m_hostid; }
     const PaHostApiInfo &Info() const noexcept { return info; }
-    const std::optional<SystemDevice> DefaultOutputDevice() const {
+    const std::optional<SystemDevice> DefaultOutputDevice() const
+    {
 
         const auto glob_idx = info.defaultOutputDevice;
         for (const auto &sd : m_enum.Devices())
