@@ -1,5 +1,11 @@
+// This is an independent project of an individual developer. Dear PVS-Studio,
+// please check it.
+
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java:
+// http://www.viva64.com
 #pragma once
 #include "./portaudio/include/portaudio.h"
+#include <cassert>
 #include <functional>
 #include <optional>
 #include <stdexcept>
@@ -26,6 +32,10 @@ struct ComInit
 
 namespace cppaudio
 {
+[[maybe_unused]] inline static void sleep(long millis)
+{
+    return Pa_Sleep(millis);
+}
 namespace detail
 {
 template <typename T> struct NoCopy
@@ -57,6 +67,96 @@ struct PaStatics : NoCopy<PaStatics>, ComInit
     static inline unsigned int ctr = 0;
 };
 } // namespace detail
+
+/*/
+typedef int PaStreamCallback(
+    const void *input, void *output,
+    unsigned long frameCount,
+    const PaStreamCallbackTimeInfo* timeInfo,
+    PaStreamCallbackFlags statusFlags,
+    void *userData );
+    /*/
+enum class StreamCallbackFlags : unsigned int
+{
+
+    /** In a stream opened with paFramesPerBufferUnspecified, indicates that
+     input data is all silence (zeros) because no real data is available. In a
+     stream opened without paFramesPerBufferUnspecified, it indicates that one
+     or more zero samples have been inserted into the input buffer to compensate
+     for an input underflow.
+     @see PaStreamCallbackFlags
+    */
+    InputUnderflow = paInputUnderflow,
+
+    /** In a stream opened with paFramesPerBufferUnspecified, indicates that
+     data prior to the first sample of the input buffer was discarded due to an
+     overflow, possibly because the stream callback is using too much CPU time.
+     Otherwise indicates that data prior to one or more samples in the
+     input buffer was discarded.
+     @see PaStreamCallbackFlags
+    */
+    InputOverflow = paInputOverflow,
+
+    /** Indicates that output data (or a gap) was inserted, possibly because the
+     stream callback is using too much CPU time.
+     @see PaStreamCallbackFlags
+    */
+    OutputUnderflow = paOutputOverflow,
+
+    /** Indicates that output data will be discarded because no room is
+     available.
+     @see PaStreamCallbackFlags
+    */
+    OutputOverflow = paOutputOverflow,
+
+    /** Some of all of the output data will be used to prime the stream, input
+     data may be zero.
+     @see PaStreamCallbackFlags
+    */
+    PrimingOutput = paPrimingOutput
+};
+using StreamCallbackTimeInfo = PaStreamCallbackTimeInfo;
+struct SampleFormats
+{
+    static auto constexpr Float32 = paFloat32;
+    static auto constexpr Int32 = paInt32;
+    static auto constexpr Int24 = paInt24;
+    static auto constexpr Int16 = paInt16;
+    static auto constexpr Int8 = paInt8;
+    static auto constexpr UInt8 = paUInt8;
+    static auto constexpr CustomFormat = paCustomFormat;
+    static auto constexpr NonInterleaved = paNonInterleaved;
+    static auto constexpr Default = Float32;
+
+    unsigned long value = Float32;
+    inline unsigned long operator|(const SampleFormats &other)
+    {
+        value |= other.value;
+        return value;
+    }
+    inline bool operator==(const unsigned long rhs) { return rhs == value; }
+    inline unsigned long operator&(const SampleFormats &other)
+    {
+        value &= other.value;
+        return value;
+    }
+};
+struct AudioDetails
+{
+    unsigned int samplerate = 0;
+    unsigned int nch = 0;
+    SampleFormats format{SampleFormats::Default};
+};
+
+template <typename T> struct CallbackParams
+{
+    const T *inputBuffer = nullptr;
+    const T *outputBuffer = nullptr;
+    const unsigned long frameCount = 0;
+    const AudioDetails audioDetails = {};
+    const StreamCallbackTimeInfo *timeInfo = nullptr;
+    StreamCallbackFlags statusFlags = 0;
+};
 
 class SystemDevice
 {
@@ -91,8 +191,9 @@ class Device
     PaDeviceInfo m_info = {};
     PaStreamParameters m_inParams = {-1, -1, paFloat32, 0, nullptr};
     PaStreamParameters m_outParams = {-1, -1, paFloat32, 0, nullptr};
-    // the *desired* direction you want tht device to operate in.
+    // the *desired* direction you want the device to operate in.
     Direction m_direction = Direction::unknown;
+    SampleFormats m_fmt{SampleFormats::Float32};
 
     void setCurrentDirection(Direction dir)
     {
@@ -119,6 +220,7 @@ class Device
             }
         }
         m_direction = dir;
+
         if (this->IsOutput())
         {
             setDefaultOutParams();
@@ -154,6 +256,14 @@ class Device
                 }
             }
         }
+        else if (dir == Direction::output)
+        {
+            setCurrentDirection(Direction::output);
+        }
+        else
+        {
+            assert("implement me" == nullptr);
+        }
     }
 
     const PaDeviceInfo &Info() const noexcept { return m_info; }
@@ -169,9 +279,27 @@ class Device
                (m_direction == Direction::input);
     }
     bool IsDuplex() const noexcept { return m_direction == Direction::duplex; }
-
-    void setDefaultOutParams() {}
-    void setDefaultInParams() {}
+    SampleFormats sampleFormat() const noexcept { return m_fmt; }
+    void setDefaultOutParams()
+    {
+        auto &p = m_outParams;
+        p.device = m_sysDevice.GlobalDeviceIndex();
+        const auto chans = m_sysDevice.Info().maxOutputChannels;
+        p.channelCount = chans < 2 ? chans : 2;
+        p.hostApiSpecificStreamInfo = nullptr;
+        p.sampleFormat = SampleFormats::Default;
+        p.suggestedLatency = m_sysDevice.Info().defaultHighOutputLatency;
+    }
+    void setDefaultInParams()
+    {
+        auto &p = m_inParams;
+        p.device = m_sysDevice.GlobalDeviceIndex();
+        const auto chans = m_sysDevice.Info().maxInputChannels;
+        p.channelCount = chans < 2 ? chans : 2;
+        p.hostApiSpecificStreamInfo = nullptr;
+        p.sampleFormat = SampleFormats::Default;
+        p.suggestedLatency = m_sysDevice.Info().defaultHighInputLatency;
+    }
 
     bool hasOutputParams() const noexcept { return m_outParams.device >= 0; }
     bool hasInputParams() const noexcept { return m_inParams.device >= 0; }

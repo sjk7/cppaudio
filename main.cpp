@@ -1,10 +1,47 @@
+// This is an independent project of an individual developer. Dear PVS-Studio,
+// please check it.
+
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java:
+// http://www.viva64.com
+
 #include "cppaudio.hpp"
 #include <cassert>
 #include <iostream>
 
 using namespace std;
 
-void test_sine()
+template <typename SAMPLETYPE, typename CB> struct Stream
+{
+    Stream(CB &&cb) : m_cb(std::forward<CB>(cb)){};
+    Stream(SAMPLETYPE, CB &&cb) : Stream(std::forward<CB>(cb)) {}
+    CB m_cb;
+    template <typename T> void call(const T &t) { m_cb(t); }
+};
+
+void play_tone()
+{
+#ifdef _WIN32
+    const cppaudio::HostIds THE_HOST_ID = cppaudio::HostIds::WASAPI;
+#else
+    cppaudio::audio x;
+    const cppaudio::HostIds THE_HOST_ID = x.DefaultApi().HostId();
+#endif
+    cppaudio::audio a(THE_HOST_ID);
+    auto &hostapi = a.CurrentApi();
+
+    auto sysDevice = *hostapi->DefaultOutputDevice();
+    auto mydevice = cppaudio::Device(sysDevice, cppaudio::Direction::output);
+    float f = 0;
+    auto mystream = Stream(f, [](auto &params) {
+        cout << params << endl;
+        return 0;
+    });
+    mystream.call("Hello wanka!"s);
+    mystream.call(42);
+    cout << endl;
+}
+
+void test_output_device_prepare()
 {
 #ifdef _WIN32
     const cppaudio::HostIds THE_HOST_ID = cppaudio::HostIds::WASAPI;
@@ -23,6 +60,7 @@ void test_sine()
     assert(mydevice.IsOutput());
     assert(mydevice.hasOutputParams());
     assert(!mydevice.hasInputParams());
+    assert(mydevice.sampleFormat() == cppaudio::SampleFormats::Float32);
 }
 
 void test_api(cppaudio::audio &audio)
@@ -54,7 +92,8 @@ void test_api(cppaudio::audio &audio)
 
 int main()
 {
-
+    play_tone();
+    exit(0);
     cppaudio::audio audio;
     cout << "Using backend: " << cppaudio::audio::build_info() << endl;
     cout << "Host Apis available: " << audio.hostApis().size() << endl;
@@ -74,6 +113,6 @@ int main()
     }
 
     test_api(audio);
-    test_sine();
+    test_output_device_prepare();
     return 0;
 }
