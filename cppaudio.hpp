@@ -78,7 +78,7 @@ typedef int PaStreamCallback(
     /*/
 enum class StreamCallbackFlags : unsigned int
 {
-
+    None = 0,
     /** In a stream opened with paFramesPerBufferUnspecified, indicates that
      input data is all silence (zeros) because no real data is available. In a
      stream opened without paFramesPerBufferUnspecified, it indicates that one
@@ -155,7 +155,7 @@ template <typename T> struct CallbackParams
     const unsigned long frameCount = 0;
     const AudioDetails audioDetails = {};
     const StreamCallbackTimeInfo *timeInfo = nullptr;
-    StreamCallbackFlags statusFlags = 0;
+    StreamCallbackFlags statusFlags = StreamCallbackFlags::None;
 };
 
 class SystemDevice
