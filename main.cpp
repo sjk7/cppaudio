@@ -19,10 +19,16 @@ using DOUBLE32 = DOUBLE;
 
 template <typename SAMPLETYPE, typename CB> struct Stream
 {
-    Stream(CB &&cb) : m_cb(std::forward<CB>(cb)){};
-    Stream(cppaudio::Device &, CB &&cb) : Stream(std::forward<CB>(cb)) {}
+    Stream(CB &&cb, cppaudio::Device &d)
+        : m_cb(std::forward<CB>(cb)), m_device(d){};
+
+    Stream(SAMPLETYPE, cppaudio::Device &device, CB &&cb)
+        : Stream(std::forward<CB>(cb), device)
+    {
+    }
     CB m_cb;
     template <typename T> void call(const T &t) { m_cb(t); }
+    cppaudio::Device &m_device;
 };
 
 void play_tone()
@@ -30,12 +36,12 @@ void play_tone()
 
     cppaudio::audio a;
     auto myDevice = a.DefaultOutputDeviceInstance();
-    auto mystream = Stream(myDevice, [](auto &params) {
+    auto mystream = Stream(float(), myDevice, [](auto &params) {
         cout << params << endl;
         return 0;
     });
-    mystream.call("Hello wanka!"s);
-    mystream.call(42);
+    // mystream.call("Hello wanka!"s);
+    // mystream.call(42);
     cout << endl;
 }
 

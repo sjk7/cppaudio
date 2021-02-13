@@ -155,11 +155,8 @@ template <typename T> struct IOParams
     const unsigned long frameCount = 0;
     const IODetails audioDetails = {};
     const StreamCallbackTimeInfo *timeInfo = nullptr;
-<<<<<<< HEAD
+
     StreamCallbackFlags statusFlags = {};
-=======
-    StreamCallbackFlags statusFlags = StreamCallbackFlags::None;
->>>>>>> dfaaf949948a8b569d0e587dc2c443157b7f058f
 };
 
 class SystemDevice

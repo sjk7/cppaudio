@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<<<<<<< HEAD
-<!-- Written by QtCreator 4.14.1, 2021-02-07T00:30:47. -->
-=======
-<!-- Written by QtCreator 4.14.0, 2021-02-05T02:03:46. -->
->>>>>>> dfaaf949948a8b569d0e587dc2c443157b7f058f
+<!-- Written by QtCreator 4.14.1, 2021-02-13T09:25:09. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -305,7 +301,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="bool" key="RunConfiguration.UseTerminal">true</value>
+    <value type="bool" key="RunConfiguration.UseTerminal">false</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/DevNVME/Desktop/build-cppaudio-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
