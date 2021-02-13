@@ -1,0 +1,2 @@
+C:\Users\DevNVME\Desktop\cppaudio\portaudio\build\msvc\x64\Debug\portaudio.dll.lastcodeanalysissucceeded
+C:\Users\DevNVME\Desktop\cppaudio\portaudio\build\msvc\x64\Debug\NativeCodeAnalysis.read.1.tlog

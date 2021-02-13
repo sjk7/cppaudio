@@ -10,29 +10,27 @@
 
 using namespace std;
 
+namespace SAMPLETYPES
+{
+using INT16 = short;
+using FLOAT32 = float;
+using DOUBLE32 = DOUBLE;
+} // namespace SAMPLETYPES
+
 template <typename SAMPLETYPE, typename CB> struct Stream
 {
     Stream(CB &&cb) : m_cb(std::forward<CB>(cb)){};
-    Stream(SAMPLETYPE, CB &&cb) : Stream(std::forward<CB>(cb)) {}
+    Stream(cppaudio::Device &, CB &&cb) : Stream(std::forward<CB>(cb)) {}
     CB m_cb;
     template <typename T> void call(const T &t) { m_cb(t); }
 };
 
 void play_tone()
 {
-#ifdef _WIN32
-    const cppaudio::HostIds THE_HOST_ID = cppaudio::HostIds::WASAPI;
-#else
-    cppaudio::audio x;
-    const cppaudio::HostIds THE_HOST_ID = x.DefaultApi().HostId();
-#endif
-    cppaudio::audio a(THE_HOST_ID);
-    auto &hostapi = a.CurrentApi();
 
-    auto sysDevice = *hostapi->DefaultOutputDevice();
-    auto mydevice = cppaudio::Device(sysDevice, cppaudio::Direction::output);
-    float f = 0;
-    auto mystream = Stream(f, [](auto &params) {
+    cppaudio::audio a;
+    auto myDevice = a.DefaultOutputDeviceInstance();
+    auto mystream = Stream(myDevice, [](auto &params) {
         cout << params << endl;
         return 0;
     });

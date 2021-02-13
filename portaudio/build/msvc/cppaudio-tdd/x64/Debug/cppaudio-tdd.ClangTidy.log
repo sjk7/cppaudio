@@ -1,0 +1,7 @@
+Error while processing C:\Users\DevNVME\Desktop\cppaudio\main.cpp.
+C:\Users\DevNVME\Desktop\cppaudio/cppaudio.hpp:158:39: error: cannot initialize a member subobject of type 'cppaudio::StreamCallbackFlags' with an rvalue of type 'int' [clang-diagnostic-error]
+    StreamCallbackFlags statusFlags = 0;
+                                      ^
+Suppressed 1 warnings (1 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+Found compiler error(s).

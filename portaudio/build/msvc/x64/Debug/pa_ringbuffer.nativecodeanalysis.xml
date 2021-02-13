@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\DevNVME\Desktop\cppaudio\portaudio\src\common\</FILEPATH>
+      <FILENAME>pa_ringbuffer.c</FILENAME>
+      <LINE>206</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>PaUtil_WriteRingBuffer</FUNCTION>
+    <DECORATED>PaUtil_WriteRingBuffer</DECORATED>
+    <FUNCLINE>198</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\DevNVME\Desktop\cppaudio\portaudio\src\common\</FILEPATH>
+      <FILENAME>pa_ringbuffer.c</FILENAME>
+      <LINE>207</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>PaUtil_WriteRingBuffer</FUNCTION>
+    <DECORATED>PaUtil_WriteRingBuffer</DECORATED>
+    <FUNCLINE>198</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\DevNVME\Desktop\cppaudio\portaudio\src\common\</FILEPATH>
+      <FILENAME>pa_ringbuffer.c</FILENAME>
+      <LINE>208</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>PaUtil_WriteRingBuffer</FUNCTION>
+    <DECORATED>PaUtil_WriteRingBuffer</DECORATED>
+    <FUNCLINE>198</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\DevNVME\Desktop\cppaudio\portaudio\src\common\</FILEPATH>
+      <FILENAME>pa_ringbuffer.c</FILENAME>
+      <LINE>212</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>PaUtil_WriteRingBuffer</FUNCTION>
+    <DECORATED>PaUtil_WriteRingBuffer</DECORATED>
+    <FUNCLINE>198</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\DevNVME\Desktop\cppaudio\portaudio\src\common\</FILEPATH>
+      <FILENAME>pa_ringbuffer.c</FILENAME>
+      <LINE>227</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>PaUtil_ReadRingBuffer</FUNCTION>
+    <DECORATED>PaUtil_ReadRingBuffer</DECORATED>
+    <FUNCLINE>220</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\DevNVME\Desktop\cppaudio\portaudio\src\common\</FILEPATH>
+      <FILENAME>pa_ringbuffer.c</FILENAME>
+      <LINE>228</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>PaUtil_ReadRingBuffer</FUNCTION>
+    <DECORATED>PaUtil_ReadRingBuffer</DECORATED>
+    <FUNCLINE>220</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\DevNVME\Desktop\cppaudio\portaudio\src\common\</FILEPATH>
+      <FILENAME>pa_ringbuffer.c</FILENAME>
+      <LINE>229</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>PaUtil_ReadRingBuffer</FUNCTION>
+    <DECORATED>PaUtil_ReadRingBuffer</DECORATED>
+    <FUNCLINE>220</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\DevNVME\Desktop\cppaudio\portaudio\src\common\</FILEPATH>
+      <FILENAME>pa_ringbuffer.c</FILENAME>
+      <LINE>233</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>PaUtil_ReadRingBuffer</FUNCTION>
+    <DECORATED>PaUtil_ReadRingBuffer</DECORATED>
+    <FUNCLINE>220</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

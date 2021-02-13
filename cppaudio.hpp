@@ -141,21 +141,21 @@ struct SampleFormats
         return value;
     }
 };
-struct AudioDetails
+struct IODetails
 {
     unsigned int samplerate = 0;
     unsigned int nch = 0;
     SampleFormats format{SampleFormats::Default};
 };
 
-template <typename T> struct CallbackParams
+template <typename T> struct IOParams
 {
     const T *inputBuffer = nullptr;
     const T *outputBuffer = nullptr;
     const unsigned long frameCount = 0;
-    const AudioDetails audioDetails = {};
+    const IODetails audioDetails = {};
     const StreamCallbackTimeInfo *timeInfo = nullptr;
-    StreamCallbackFlags statusFlags = 0;
+    StreamCallbackFlags statusFlags = {};
 };
 
 class SystemDevice
@@ -457,6 +457,8 @@ class ApiEnumerator
     }
 };
 using HostApiResult = std::optional<HostApi>;
+using SystemDeviceResult = std::optional<SystemDevice>;
+
 class audio
 {
     static inline detail::PaStatics m_pa;
@@ -494,6 +496,24 @@ class audio
     static auto build_info() noexcept
     {
         return detail::PaStatics::build_info();
+    }
+    const SystemDeviceResult DefaultOutputDevice()
+    {
+        auto idx = Pa_GetDefaultOutputDevice();
+        auto info = Pa_GetDeviceInfo(idx);
+        m_enum.do_enum(); // make sure we have all apis
+        m_api_current = m_enum.m_apis.at(info->hostApi);
+        assert(m_enum.m_apis.size() < (unsigned int)idx);
+        return m_api_current->DefaultOutputDevice();
+    }
+    const Device DefaultOutputDeviceInstance()
+    {
+        auto idx = Pa_GetDefaultOutputDevice();
+        auto info = Pa_GetDeviceInfo(idx);
+        m_enum.do_enum(); // make sure we have all apis
+        m_api_current = m_enum.m_apis.at(info->hostApi);
+        assert(m_enum.m_apis.size() < (unsigned int)idx);
+        return Device(*m_api_current->DefaultOutputDevice());
     }
     const HostApiList hostApis() const noexcept { return m_enum.m_apis; }
     const HostApiResult &CurrentApi() const noexcept { return m_api_current; }
